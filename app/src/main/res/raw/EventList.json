@@ -1,0 +1,6 @@
+//事件的列表
+{
+  "events":[
+    {"eventName":"changeActivity"}
+  ]
+}
