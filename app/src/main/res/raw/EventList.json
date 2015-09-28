@@ -1,6 +1,9 @@
 //事件的列表
 {
-  "events":[
-    {"eventName":"changeActivity"}
+  "events": [
+    {"eventName":"com.grey_zoo.titly.titly.dispatcher.event.ChangeActivityEvent",
+      "observer":[
+      {"name":"com.grey_zoo.titly.titly.MainActivity"}
+    ]}
   ]
 }

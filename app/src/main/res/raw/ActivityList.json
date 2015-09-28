@@ -1,6 +1,6 @@
-//注册四大组件
 {
   "Activitys":[
-    {"home":"com.grey_zoo.titly.titly.home.ActivityHome"}
+    {"home":"com.grey_zoo.titly.titly.home.ActivityHome"},
+    {"test":"com.grey_zoo.titly.titly.test.ActivityTest"}
   ]
 }

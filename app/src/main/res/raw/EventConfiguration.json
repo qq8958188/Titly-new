@@ -1,6 +1,0 @@
-//事件与响应者
-{
-  "eventConfiguraion": [
-    {"changeActivity":"com.grey_zoo.titly.titly.MainActivity"}
-  ]
-}

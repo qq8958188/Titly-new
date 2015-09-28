@@ -17,6 +17,4 @@ public class StartActivityEvent extends TEvent{
     public String model;
     //附带数据
     public Bundle bundle;
-    //当前的fragment
-    public BaseActivity currentActivity;
 }

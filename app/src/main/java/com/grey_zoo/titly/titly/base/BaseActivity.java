@@ -3,14 +3,20 @@ package com.grey_zoo.titly.titly.base;
 import android.content.Context;
 import android.os.Bundle;
 import android.support.v4.app.Fragment;
+import android.view.KeyEvent;
 import android.view.LayoutInflater;
 import android.view.View;
 import android.view.ViewGroup;
 
+import com.grey_zoo.titly.titly.MainActivity;
+import com.grey_zoo.titly.titly.dispatcher.TCallback;
+import com.grey_zoo.titly.titly.dispatcher.TEvent;
+import com.grey_zoo.titly.titly.dispatcher.TObserver;
+
 /**
  * Created by Administrator on 2015/9/24 0024.
  */
-public abstract class BaseActivity extends Fragment {
+public abstract class BaseActivity extends Fragment implements TObserver{
 
     public View view;
     private Context ct;
@@ -49,5 +55,16 @@ public abstract class BaseActivity extends Fragment {
      * 已完成创建，相当于Activity中setContentView后
      */
     public abstract void onCreated(Bundle savedInstanceState);
+
+    @Override
+    public void onEvent(TEvent event, TCallback callback) {
+
+    }
+
+    public boolean onKeyDown(int keyCode, KeyEvent event) {
+        System.out.println("BA onKeyDown");
+        MainActivity mainActivity= (MainActivity) getActivity();
+        return mainActivity.superKeyDown(keyCode,event);
+    }
 
 }
